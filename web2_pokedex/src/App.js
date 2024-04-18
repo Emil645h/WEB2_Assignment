@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import ReactDOM from 'react';
+import ReactDOM from 'react-dom';
 
 let apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=16&offset=";
 
