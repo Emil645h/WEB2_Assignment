@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import ReactDOM from 'react';
 
 let apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=16&offset=";
 
@@ -58,5 +59,8 @@ function NextButton({ pageIndex, onClick }) {
 function PreviousButton({ pageIndex, onClick }) {
   return <div class="button">{pageIndex > 0 && <button onClick={onClick}>Previous</button>}</div>
 }
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<App />)
 
 export default App;
